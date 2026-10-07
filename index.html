@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vishal Baskar — AI Engineer | Agentic Systems & Backend</title>
+<meta name="description" content="Vishal Baskar — AI Engineer building agentic & LLM-powered backend systems with LangGraph, RAG/GraphRAG, MCP and Docker." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0f1c'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%2334f5c5' font-family='monospace' font-weight='bold'>VB</text></svg>" />
+</head>
+<body>
+
+<div class="noise"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo">VB<span class="accent">.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Stack</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <a href="https://github.com/BVishal25" target="_blank" rel="noopener" class="nav-cta">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+    GitHub
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <canvas id="netCanvas"></canvas>
+  <div class="hero-inner">
+    <p class="hero-kicker mono">// agent.status: <span class="accent">running</span></p>
+    <h1 class="hero-name">Vishal <span class="accent">Baskar</span></h1>
+    <div class="hero-role mono"><span class="prompt">&gt;_</span> <span id="typewriter"></span><span class="caret"></span></div>
+    <p class="hero-tag">I build <strong>agentic, LLM-powered backend systems</strong> — where every tool call is verified, every decision is auditable, and reliability comes first.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-meta mono">
+      <span>📍 Chennai, India</span><span class="dot">•</span><span>🛠 TrustRuntime — in progress</span><span class="dot">•</span><span>🧠 GraphRAG × MCP × LangGraph</span>
+    </div>
+  </div>
+  <div class="hero-scroll mono">scroll ↓</div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="section-head">
+    <span class="section-num mono">01</span>
+    <h2 class="section-title">About</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm an <strong>AI Engineer</strong> focused on agentic and LLM-powered backend systems in <strong>Python and FastAPI</strong>. I work hands-on with <strong>LangGraph, RAG/GraphRAG, MCP</strong> and <strong>Docker-based sandboxed execution</strong>.</p>
+      <p>Currently building <strong>TrustRuntime</strong> — an agent runtime with deterministic verification, policy-controlled tool use and prompt-injection defenses.</p>
+      <p>Before AI, I resolved <strong>500+ production issues</strong> through root-cause analysis in an enterprise Salesforce environment. That experience shaped my <strong>reliability-first</strong> approach to building AI systems.</p>
+    </div>
+    <div class="stats reveal">
+      <div class="stat"><span class="stat-num" data-count="500">0</span><span class="stat-label">Production issues resolved</span></div>
+      <div class="stat"><span class="stat-num" data-count="8" data-suffix=".23">0</span><span class="stat-label">GPA — B.E. CSE (AI &amp; ML)</span></div>
+      <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Public repos &amp; counting</span></div>
+      <div class="stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">AI / agent certificates</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="section-head">
+    <span class="section-num mono">02</span>
+    <h2 class="section-title">Stack</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">🤖</div>
+      <h3>AI &amp; Agentic Systems</h3>
+      <div class="tags"><span>LangGraph</span><span>LangChain</span><span>RAG</span><span>GraphRAG</span><span>MCP</span><span>LLM Integration</span><span>AI Agents</span><span>Agentic Workflows</span><span>Ollama</span><span>n8n</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚙️</div>
+      <h3>Backend &amp; APIs</h3>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>Pydantic</span><span>SQLAlchemy 2.0 (Async)</span><span>REST APIs</span><span>JavaScript</span><span>Rust</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🗄️</div>
+      <h3>Data</h3>
+      <div class="tags"><span>PostgreSQL</span><span>pgvector</span><span>Neo4j</span><span>ChromaDB</span><span>Pinecone</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🐳</div>
+      <h3>DevOps &amp; Infra</h3>
+      <div class="tags"><span>Docker</span><span>Docker Compose</span><span>Linux</span><span>Git</span><span>Containerized Apps</span><span>Vercel</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🧪</div>
+      <h3>Engineering Practices</h3>
+      <div class="tags"><span>pytest</span><span>Automated Workflows</span><span>Root Cause Analysis</span><span>Troubleshooting</span></div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">☁️</div>
+      <h3>Enterprise Platforms</h3>
+      <div class="tags"><span>Salesforce</span><span>Data Integrity</span><span>Automation</span><span>Reports &amp; Dashboards</span><span>Lightning Web Components</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="section-head">
+    <span class="section-num mono">03</span>
+    <h2 class="section-title">Projects</h2>
+  </div>
+  <div class="projects-grid">
+
+    <article class="project-card featured reveal">
+      <div class="project-top"><span class="badge mono">FLAGSHIP — IN DEVELOPMENT</span><span class="project-emoji">🛡️</span></div>
+      <h3>TrustRuntime</h3>
+      <p class="project-sub">Trustworthy Adaptive AI Agent Runtime</p>
+      <p>A model-agnostic agent runtime combining temporal GraphRAG, test-time reasoning, deterministic verification and policy-controlled tool execution.</p>
+      <ul>
+        <li>Epistemic memory layer — entities, relationships, timestamps, provenance &amp; conflicting evidence</li>
+        <li>Test-time compute: Best-of-N, self-refinement, search-based reasoning with compute budgets</li>
+        <li>Docker sandbox: resource-limited execution + deterministic output validation</li>
+        <li>Agent security: risk-based auth, audit trails, prompt-injection defenses, red-team evals</li>
+      </ul>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>LangGraph</span><span>GraphRAG</span><span>Neo4j</span><span>PostgreSQL</span><span>Docker</span><span>Ollama</span></div>
+      <a href="https://github.com/BVishal25" target="_blank" rel="noopener" class="project-link mono">github.com/BVishal25 →</a>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-top"><span class="badge mono">OPEN SOURCE</span><span class="project-emoji">🎓</span></div>
+      <h3>Learn (with) AI</h3>
+      <p>Full-stack platform that generates educational content dynamically through multiple AI providers. Multi-provider LLM backend — users connect their own API keys — with Google OAuth and browser-side caching to cut unnecessary API calls.</p>
+      <div class="tags"><span>JavaScript</span><span>Docker</span><span>Vercel</span><span>Google OAuth</span><span>LLM APIs</span></div>
+      <a href="https://github.com/BVishal25/learn-with-ai-web" target="_blank" rel="noopener" class="project-link mono">github.com/BVishal25/learn-with-ai-web →</a>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-top"><span class="badge mono">OPEN SOURCE</span><span class="project-emoji">⚖️</span></div>
+      <h3>TN Labour Law Analyst</h3>
+      <p>An AI agent that answers questions regarding Tamil Nadu Labour and Employment Laws.</p>
+      <div class="tags"><span>Python</span><span>AI Agents</span><span>RAG</span></div>
+      <a href="https://github.com/BVishal25/TN-Labour-Law-Analyst" target="_blank" rel="noopener" class="project-link mono">github.com/BVishal25/TN-Labour-Law-Analyst →</a>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-top"><span class="badge mono">OPEN SOURCE</span><span class="project-emoji">🚀</span></div>
+      <h3>AI Ascent</h3>
+      <p>AI learning app covering every technology, with a built-in AI adventurous text game to become a problem solver in specific fields of AI.</p>
+      <div class="tags"><span>TypeScript</span><span>LLM Apps</span><span>Gamification</span></div>
+      <a href="https://github.com/BVishal25/ai-ascent-app" target="_blank" rel="noopener" class="project-link mono">github.com/BVishal25/ai-ascent-app →</a>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-top"><span class="badge mono">OPEN SOURCE</span><span class="project-emoji">🧩</span></div>
+      <h3>Technical Concept Simplifier</h3>
+      <p>Breaks down complex technical concepts into simple, digestible explanations.</p>
+      <div class="tags"><span>Python</span><span>LLM Integration</span></div>
+      <a href="https://github.com/BVishal25/Technical-Concept-Simplifier" target="_blank" rel="noopener" class="project-link mono">github.com/BVishal25/Technical-Concept-Simplifier →</a>
+    </article>
+
+    <article class="project-card reveal">
+      <div class="project-top"><span class="badge mono">OPEN SOURCE</span><span class="project-emoji">📊</span></div>
+      <h3>ML Projects</h3>
+      <p>A collection of hands-on machine learning projects and experiments in Jupyter.</p>
+      <div class="tags"><span>Jupyter</span><span>Machine Learning</span></div>
+      <a href="https://github.com/BVishal25/ML-Projects" target="_blank" rel="noopener" class="project-link mono">github.com/BVishal25/ML-Projects →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="section-head">
+    <span class="section-num mono">04</span>
+    <h2 class="section-title">Experience</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-card">
+        <div class="timeline-head">
+          <div>
+            <h3>System Analyst</h3>
+            <p class="timeline-org">Hibiz Solutions Pvt. Ltd. — Chennai</p>
+          </div>
+          <span class="timeline-date mono">Jun 2023 – Jul 2024</span>
+        </div>
+        <ul>
+          <li>Resolved <strong>500+ technical issues</strong> across data discrepancies, automation workflow failures, system configuration and application behavior using systematic root-cause analysis.</li>
+          <li>Diagnosed workflow and system failures in an enterprise production environment and implemented corrective fixes that improved reliability.</li>
+          <li>Protected data integrity across <strong>thousands of Salesforce customer records</strong> through audits, validation rules and automated cleanup processes.</li>
+          <li>Turned stakeholder requirements into reports, dashboards, automated workflows and system configurations.</li>
+          <li>Built custom <strong>Lightning Web Components</strong> (HTML, CSS, JavaScript) to improve application interfaces.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="edu-certs">
+    <div class="edu-block reveal">
+      <h3><span class="accent">▸</span> Education</h3>
+      <div class="edu-item">
+        <strong>B.E. Computer Science &amp; Engineering (AI &amp; ML)</strong>
+        <span>Annamalai University, Chidambaram — May 2023 · GPA 8.23/10</span>
+      </div>
+    </div>
+    <div class="edu-block reveal">
+      <h3><span class="accent">▸</span> Certificates</h3>
+      <div class="cert-list mono">
+        <div><span class="cert-date">Sep 2025</span>LangChain Academy — Intro to LangGraph</div>
+        <div><span class="cert-date">Aug 2025</span>Hugging Face — MCP Course Unit 3</div>
+        <div><span class="cert-date">Jul 2025</span>Hugging Face — Fundamentals of MCP</div>
+        <div><span class="cert-date">Jun 2025</span>Hugging Face — AI Agents Fundamentals</div>
+        <div><span class="cert-date">Sep 2025</span>n8n Community Level 1 &amp; 2</div>
+        <div><span class="cert-date">Jun 2025</span>Coursera — Advanced Learning Algorithms · Supervised ML</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="section-head">
+    <span class="section-num mono">05</span>
+    <h2 class="section-title">Contact</h2>
+  </div>
+  <div class="contact-wrap reveal">
+    <h3 class="contact-title">Let's build something <span class="accent">reliable</span>.</h3>
+    <p class="contact-sub">Open to AI engineering roles, collaborations and interesting agentic problems.</p>
+    <div class="contact-links">
+      <a href="mailto:vishalbaskar25@gmail.com" class="contact-card">
+        <span class="contact-icon">✉️</span>
+        <span class="contact-label">Email</span>
+        <span class="contact-value mono">vishalbaskar25@gmail.com</span>
+      </a>
+      <a href="tel:+919025541462" class="contact-card">
+        <span class="contact-icon">📱</span>
+        <span class="contact-label">Phone</span>
+        <span class="contact-value mono">+91 90255 41462</span>
+      </a>
+      <a href="https://www.linkedin.com/in/vishal-baskar-84409b1aa" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-icon">💼</span>
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value mono">in/vishal-baskar-84409b1aa</span>
+      </a>
+      <a href="https://github.com/BVishal25" target="_blank" rel="noopener" class="contact-card">
+        <span class="contact-icon">🐙</span>
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value mono">github.com/BVishal25</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <span class="mono">© 2026 Vishal Baskar · designed &amp; built from scratch</span>
+  <span class="mono footer-status">agent.status: <span class="accent">accepting opportunities</span></span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
