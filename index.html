@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="style.css?v=3" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230a0f1c'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%2334f5c5' font-family='monospace' font-weight='bold'>VB</text></svg>" />
 </head>
 <body>
@@ -18,7 +18,7 @@
   <div class="preloader-inner">
     <span class="preloader-logo mono">VB<span class="accent">.</span></span>
     <div class="preloader-bar"><span id="preloaderFill"></span></div>
-    <span class="preloader-status mono" id="preloaderStatus">initializing agent…</span>
+    <span class="preloader-status mono"><span id="preloaderPct">0</span>% — <span id="preloaderStatus">initializing agent…</span></span>
   </div>
 </div>
 
@@ -48,16 +48,29 @@
 <section class="hero" id="top">
   <canvas id="netCanvas"></canvas>
   <div class="hero-inner">
-    <p class="hero-kicker mono reveal-now">// agent.status: <span class="accent">running</span> · Chennai, IN</p>
-    <h1 class="hero-name">
-      <span class="line">Vishal</span>
-      <span class="line outline">Baskar</span>
-    </h1>
-    <div class="hero-role mono reveal-now"><span class="prompt">&gt;_</span> <span id="typewriter"></span><span class="caret"></span></div>
-    <p class="hero-tag reveal-now">I build <strong>agentic, LLM-powered backend systems</strong> — where every tool call is verified, every decision is auditable, and reliability comes first.</p>
-    <div class="hero-actions reveal-now">
-      <a href="#projects" class="btn btn-primary magnetic">View Projects</a>
-      <a href="#contact" class="btn btn-ghost magnetic">Get in Touch</a>
+    <div class="hero-copy">
+      <p class="hero-kicker mono">// agent.status: <span class="accent">running</span> · Chennai, IN</p>
+      <h1 class="hero-name" id="heroName">
+        <span class="line">Vishal</span>
+        <span class="line outline">Baskar</span>
+      </h1>
+      <div class="hero-role mono"><span class="prompt">&gt;_</span> <span id="typewriter"></span><span class="caret"></span></div>
+      <p class="hero-tag">I build <strong>agentic, LLM-powered backend systems</strong> — where every tool call is verified, every decision is auditable, and reliability comes first.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary magnetic">View Projects</a>
+        <a href="#contact" class="btn btn-ghost magnetic">Get in Touch</a>
+      </div>
+      <div class="hero-meta mono">
+        <span>🛠 TrustRuntime in progress</span><span class="dot">•</span><span>🧠 GraphRAG × MCP × LangGraph</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-frame" id="avatarFrame">
+        <canvas id="avatarCanvas"></canvas>
+        <img src="assets/avatar.jpg" alt="Vishal Baskar" class="avatar-fallback" id="avatarFallback" />
+        <span class="avatar-chip mono">AI · AGENTIC · BACKEND</span>
+      </div>
+      <p class="avatar-hint mono">move your cursor · click the portrait</p>
     </div>
   </div>
   <div class="hero-scroll mono">scroll ↓</div>
@@ -93,6 +106,7 @@
 
 <!-- ============ SKILLS ============ -->
 <section class="section" id="skills">
+  <span class="ghost" aria-hidden="true">STACK</span>
   <div class="section-head">
     <span class="section-num mono">02</span>
     <h2 class="section-title">Stack</h2>
@@ -133,14 +147,14 @@
 
 <!-- ============ PROJECTS ============ -->
 <section class="section" id="projects">
+  <span class="ghost" aria-hidden="true">WORKS</span>
   <div class="section-head">
     <span class="section-num mono">03</span>
     <h2 class="section-title">Selected Projects</h2>
   </div>
 
   <div class="works">
-
-    <article class="work reveal">
+    <article class="work reveal" data-tilt>
       <div class="work-index mono">01</div>
       <div class="work-body">
         <div class="work-head">
@@ -163,7 +177,7 @@
       </div>
     </article>
 
-    <article class="work reveal">
+    <article class="work reveal" data-tilt>
       <div class="work-index mono">02</div>
       <div class="work-body">
         <div class="work-head">
@@ -184,12 +198,12 @@
         <a href="https://github.com/BVishal25/learn-with-ai-web" target="_blank" rel="noopener" class="work-link mono">github.com/BVishal25/learn-with-ai-web →</a>
       </div>
     </article>
-
   </div>
 </section>
 
 <!-- ============ EXPERIENCE ============ -->
 <section class="section" id="experience">
+  <span class="ghost" aria-hidden="true">JOURNEY</span>
   <div class="section-head">
     <span class="section-num mono">04</span>
     <h2 class="section-title">Experience</h2>
@@ -240,6 +254,7 @@
 
 <!-- ============ CONTACT ============ -->
 <section class="section" id="contact">
+  <span class="ghost" aria-hidden="true">HELLO</span>
   <div class="contact-wrap reveal">
     <p class="contact-kicker mono">// what's next</p>
     <h3 class="contact-title">Let's build something<br /><span class="accent">reliable</span>.</h3>
@@ -266,11 +281,21 @@
   </div>
 </section>
 
+<div class="footer-marquee" aria-hidden="true">
+  <div class="footer-marquee-track" id="footerTrack">
+    <span>Vishal Baskar</span><i>◆</i><span>AI Engineer</span><i>◆</i><span>Agentic Systems</span><i>◆</i>
+  </div>
+</div>
+
 <footer class="footer">
   <span class="mono">© 2026 Vishal Baskar</span>
   <span class="mono footer-status">agent.status: <span class="accent">accepting opportunities</span></span>
 </footer>
 
-<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
